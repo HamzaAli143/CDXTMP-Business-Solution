@@ -126,10 +126,15 @@
     background-color: #47B2E4;
     color: white; border: none; padding: 10px 25px;
     border-radius: 25px;
+    margin-left: 2%;
 }
 #row-1 .hero{
-    background-color: transparent; padding: 0;
-   
+    background-color: transparent; padding: 0 10px;
+    transition: .2s all;
+    border: 2px solid transparent;
+}
+#row-1 .hero:hover{
+    border: 2px solid white;
 }
 #row-2 img{
     filter: grayscale(100%);
