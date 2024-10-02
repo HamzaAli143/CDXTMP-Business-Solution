@@ -1,5 +1,6 @@
 #navbar{
     background:#37517E;  width: 100%; padding: 1% 5%;
+    z-index: 10001;
 }
 #navbar .navbar-brand{
     font-weight: bold; font-size: 35px; color: white;
@@ -428,4 +429,14 @@
     #row-12 .form form .first-row .Email input{
         width: 100%;
     }
+}
+
+
+#last-container .right span{
+    transition: .3s all ease;
+}
+#last-container .right p span:hover{
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* transform: scale(1.1); */
 }
